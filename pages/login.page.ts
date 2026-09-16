@@ -4,7 +4,7 @@ class LoginPageConstant {
   static readonly username = 'xpath=//input[@id="user-name"]';
   static readonly password = 'xpath=//input[@id="password"]';
   static readonly loginButton = 'xpath=//input[@id="login-button"]';
-  static readonly errorMessage = 'xpath=/html/body/div[@id="root"]//h3[@data-test="error"]';
+  static readonly errorMessage = 'xpath=//h3[@data-test="error"]';
 }
 
 export class LoginPage {
@@ -14,7 +14,7 @@ export class LoginPage {
     this.page = page;
   }
 
-  async open(link: string): Promise<void> {
+  async open(link = '/'): Promise<void> {
     await this.page.goto(link);
   }
 

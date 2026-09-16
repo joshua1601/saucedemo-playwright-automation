@@ -2,12 +2,12 @@ import { expect, type Locator, type Page } from '@playwright/test';
 import { CheckoutCalculation } from '../models/checkout-calculation.model';
 
 class CheckoutOverviewPageConstant {
-  static readonly cartList = 'xpath=/html/body/div[@id="root"]//div[@data-test="cart-list"]';
-  static readonly summaryInfo = 'xpath=/html/body/div[@id="root"]//div[@class="summary_info"]';
-  static readonly itemTotal = 'xpath=/html/body/div[@id="root"]//div[@data-test="subtotal-label"]';
-  static readonly tax = 'xpath=/html/body/div[@id="root"]//div[@data-test="tax-label"]';
-  static readonly total = 'xpath=/html/body/div[@id="root"]//div[@data-test="total-label"]';
-  static readonly finishButton = 'xpath=/html/body/div[@id="root"]//button[@id="finish"]';
+  static readonly cartList = 'xpath=//div[@data-test="cart-list"]';
+  static readonly summaryInfo = 'xpath=//div[@class="summary_info"]';
+  static readonly itemTotal = 'xpath=//div[@data-test="subtotal-label"]';
+  static readonly tax = 'xpath=//div[@data-test="tax-label"]';
+  static readonly total = 'xpath=//div[@data-test="total-label"]';
+  static readonly finishButton = 'xpath=//button[@id="finish"]';
 }
 
 export class CheckoutOverviewPage {

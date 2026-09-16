@@ -92,7 +92,7 @@ Each Page Object contains a `PageConstant` class at the top of the file. It keep
 ```ts
 class LoginPageConstant {
   static readonly username =
-    'xpath=/html/body/div[@id="root"]//input[@id="user-name"]';
+    'xpath=//input[@id="user-name"]';
 }
 
 export class LoginPage {

@@ -1,9 +1,9 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
 class CheckoutCompletePageConstant {
-  static readonly completeContainer = 'xpath=/html/body/div[@id="root"]//div[@id="checkout_complete_container"]';
-  static readonly completeHeader = 'xpath=/html/body/div[@id="root"]//h2[@data-test="complete-header"]';
-  static readonly backHomeButton = 'xpath=/html/body/div[@id="root"]//button[@id="back-to-products"]';
+  static readonly completeContainer = 'xpath=//div[@id="checkout_complete_container"]';
+  static readonly completeHeader = 'xpath=//h2[@data-test="complete-header"]';
+  static readonly backHomeButton = 'xpath=//button[@id="back-to-products"]';
 }
 
 export class CheckoutCompletePage {

@@ -1,10 +1,10 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
 class CheckoutInformationPageConstant {
-  static readonly firstName = 'xpath=/html/body/div[@id="root"]//input[@id="first-name"]';
-  static readonly lastName = 'xpath=/html/body/div[@id="root"]//input[@id="last-name"]';
-  static readonly postalCode = 'xpath=/html/body/div[@id="root"]//input[@id="postal-code"]';
-  static readonly continueButton = 'xpath=/html/body/div[@id="root"]//input[@id="continue"]';
+  static readonly firstName = 'xpath=//input[@id="first-name"]';
+  static readonly lastName = 'xpath=//input[@id="last-name"]';
+  static readonly postalCode = 'xpath=//input[@id="postal-code"]';
+  static readonly continueButton = 'xpath=//input[@id="continue"]';
 }
 
 export class CheckoutInformationPage {

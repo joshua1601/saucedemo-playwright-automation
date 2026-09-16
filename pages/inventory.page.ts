@@ -1,17 +1,17 @@
 import { expect, type Locator, type Page } from '@playwright/test';
 
 class InventoryPageConstant {
-  static readonly pageTitle = 'xpath=/html/body/div[@id="root"]//span[@data-test="title"]';
-  static readonly shoppingCart = 'xpath=/html/body/div[@id="root"]//a[@data-test="shopping-cart-link"]';
-  static readonly productList = 'xpath=/html/body/div[@id="root"]//div[@data-test="inventory-list"]';
+  static readonly pageTitle = 'xpath=//span[@data-test="title"]';
+  static readonly shoppingCart = 'xpath=//a[@data-test="shopping-cart-link"]';
+  static readonly productList = 'xpath=//div[@data-test="inventory-list"]';
   static readonly backpackAddButton =
-    'xpath=/html/body/div[@id="root"]//button[@id="add-to-cart-sauce-labs-backpack"]';
+    'xpath=//button[@id="add-to-cart-sauce-labs-backpack"]';
   static readonly bikeLightAddButton =
-    'xpath=/html/body/div[@id="root"]//button[@id="add-to-cart-sauce-labs-bike-light"]';
+    'xpath=//button[@id="add-to-cart-sauce-labs-bike-light"]';
   static readonly sortDropdown =
-    'xpath=/html/body/div[@id="root"]//select[@data-test="product-sort-container"]';
+    'xpath=//select[@data-test="product-sort-container"]';
   static readonly productPrices =
-    'xpath=/html/body/div[@id="root"]//div[@data-test="inventory-item-price"]';
+    'xpath=//div[@data-test="inventory-item-price"]';
 }
 
 export class InventoryPage {
