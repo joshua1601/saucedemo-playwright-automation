@@ -3,7 +3,7 @@ import { InventoryPage } from '../pages/inventory.page';
 import { LoginPage } from '../pages/login.page';
 
 test.describe('Product sorting', () => {
-  test('Price high to low menampilkan item termahal pada urutan pertama', async ({ page }) => {
+  test('Ensure user able to sort from most expensive to least expensive', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
 

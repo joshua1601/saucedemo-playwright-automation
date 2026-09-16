@@ -8,7 +8,7 @@ import { LoginPage } from '../pages/login.page';
 import { CheckoutCalculation } from '../models/checkout-calculation.model';
 
 test.describe('Checkout', () => {
-  test('standard_user menyelesaikan checkout dua produk', async ({ page }) => {
+  test('Ensure e2e checkout flow is works properly', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const inventoryPage = new InventoryPage(page);
     const cartPage = new CartPage(page);
